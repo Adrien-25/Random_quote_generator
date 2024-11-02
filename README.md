@@ -2,14 +2,13 @@
 
 Une application simple qui génère des citations aléatoires et permet de les partager sur Twitter. 
 
+Demo : [https://citatique.netlify.app/](https://citatique.netlify.app/)
+
 ## Table des matières
 
 - [Fonctionnalités](#fonctionnalités)
 - [Technologies utilisées](#technologies-utilisées)
 - [Installation](#installation)
-- [Utilisation](#utilisation)
-- [Contributions](#contributions)
-- [Aperçu](#aperçu)
 
 ## Fonctionnalités
 
