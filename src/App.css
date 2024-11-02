@@ -1,0 +1,98 @@
+/* src/App.css */
+
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #3a6073, #16222a);
+}
+
+#quote-box {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  animation: fadeIn 0.6s ease forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#text {
+  font-size: 1.5em;
+  margin: 20px 0;
+  font-style: italic;
+}
+
+#author {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #555;
+  text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+  #text {
+    font-size: 1.2em;
+  }
+  #author {
+    font-size: 1em;
+  }
+}
+a,
+button {
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+  transition: all 0.5s ease;
+}
+a:hover,
+button:hover {
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.7);
+}
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 14px 20px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a#tweet-quote {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  border-radius: 5px;
+  color: white;
+  width: 46px;
+  height: 46px;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+a#tweet-quote:hover {
+}
+
+#tweet-quote svg {
+  width: 25px;
+}
