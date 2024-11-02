@@ -1,10 +1,12 @@
-import React from 'react';
+import React from "react";
 
-function QuoteBox() {
+const QuoteBox = ({ text, author }) => {
   return (
-    <div >
+    <div>
+      <p id="text">{text}</p>
+      <p id="author">{author}</p>
     </div>
   );
-}
+};
 
 export default QuoteBox;

@@ -1,10 +1,20 @@
-import React from 'react';
+import React from "react";
 
-function TweetButton() {
+const TweetButton = ({ quote, author }) => {
+  const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+    `"${quote}" - ${author}`
+  )}`;
+
   return (
-    <div >
-    </div>
+    <a
+      id="tweet-quote"
+      href={tweetUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Tweet Quote
+    </a>
   );
-}
+};
 
 export default TweetButton;

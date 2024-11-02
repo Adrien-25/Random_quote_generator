@@ -1,10 +1,11 @@
-import React from 'react';
+import React from "react";
 
-function QuoteButton() {
+const QuoteButton = ({ fetchQuote }) => {
   return (
-    <div >
-    </div>
+    <button id="new-quote" onClick={fetchQuote}>
+      New Quote
+    </button>
   );
-}
+};
 
 export default QuoteButton;

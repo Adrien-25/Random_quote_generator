@@ -11,8 +11,12 @@ export const fetchQuote = async () => {
 
   try {
     const response = await fetch(url, options);
-    const result = await response.text();
-    console.log(result);
+    const result = await response.json();
+
+    const quote = result.content;
+    const author = result.originator.name;
+    return { quote, author };
+  
   } catch (error) {
     console.error(error);
   }
