@@ -1,9 +1,9 @@
 import React from "react";
 
-const QuoteButton = ({ fetchQuote }) => {
+const QuoteButton = ({ fetchQuote,isLoading  }) => {
   return (
     <button id="new-quote" onClick={fetchQuote}>
-      Nouvelle citation
+       {isLoading ? "Patientez..." : "Nouvelle Citation"}
     </button>
   );
 };
