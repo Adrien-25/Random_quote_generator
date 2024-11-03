@@ -1,5 +1,9 @@
 /* src/App.css */
-
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 body {
   margin: 0;
   font-family: "Arial", sans-serif;
@@ -60,7 +64,7 @@ button {
 }
 a:hover,
 button:hover {
-    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.7);
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.7);
 }
 button {
   background-color: black;
@@ -96,4 +100,35 @@ a#tweet-quote:hover {
 
 #tweet-quote svg {
   width: 25px;
+}
+#github-link {
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-top: 40px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  border: 1px solid white;
+  gap: 10px;
+  width: fit-content;
+  margin: 0 auto;
+  background-color: white;
+  color: #1e1e1e;
+
+}
+#github-link svg {
+  transition: all 0.3s;
+  fill: #1e1e1e;
+}
+#github-link:hover {
+  background-color: transparent;
+  color: white;
+}
+#github-link:hover svg {
+  fill: white;
 }
