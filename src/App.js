@@ -26,8 +26,15 @@ const App = () => {
   //   getQuote();
   // }, [getQuote]);
   useEffect(() => {
-    getQuote();
-  }, [getQuote]); 
+    const fetchInitialQuote = async () => {
+      const { quote, author } = await fetchQuote();
+      setQuote(quote);
+      setAuthor(author);
+      setIsLoading(false);
+    };
+  
+    fetchInitialQuote();
+  }, []);
 
   return (
     <>
